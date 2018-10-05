@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
+        <tab id="baniwal" translate="label" sortOrder="2000">
+            <label>Baniwal</label>
+        </tab>
         <section id="baniwal_owl_carousel_config" translate="label" type="text" sortOrder="180" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>OWL Product Carousels</label>
             <tab>baniwal</tab>
@@ -1501,11 +1504,6 @@
                         <field id="center_brk4">0</field>
                     </depends>
                     <comment>Padding left and right on stage (can see neighbours).</comment>
-                </field>
-            </group>
-            <group id="category_products" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Custom Category Products Carousel Settings</label>
-                <field id="upgrade_to_pro" translate="comment" type="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" >
                 </field>
             </group>
         </section>

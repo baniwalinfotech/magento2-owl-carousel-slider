@@ -351,19 +351,6 @@ done also later from Sliders Manager > Edit or Add New
         );
 
 
-        $elements['mobile_image'] = $fieldset->addField(
-            'mobile_image',
-            'label',
-            [
-                'title'    => __('Mobile Image'),
-                'label'    => __('Mobile Image'),
-                'name'     => 'mobile_image',
-                'required' => false,
-                'after_element_html' => ''
-            ]
-        );
-
-
         $elements['custom'] = $fieldset->addField(
             'custom',
             'textarea',
@@ -493,10 +480,6 @@ done also later from Sliders Manager > Edit or Add New
                     'image'
                 )
                 ->addFieldMap(
-                    "{$htmlIdPrefix}mobile_image",
-                    'mobile_image'
-                )
-                ->addFieldMap(
                     "{$htmlIdPrefix}custom",
                     'custom'
                 )
@@ -506,11 +489,6 @@ done also later from Sliders Manager > Edit or Add New
                 )
                 ->addFieldDependence(
                     'image',
-                    'banner_type',
-                    '1'
-                )
-                ->addFieldDependence(
-                    'mobile_image',
                     'banner_type',
                     '1'
                 )

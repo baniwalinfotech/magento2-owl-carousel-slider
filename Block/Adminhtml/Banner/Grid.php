@@ -135,16 +135,6 @@ class Grid extends \Magento\Backend\Block\Widget\Grid\Extended
         );
 
         $this->addColumn(
-            'mobile_image',
-            [
-                'header'   => __('Mobile Image'),
-                'width'    => '50px',
-                'filter'   => false,
-                'renderer' => 'Baniwal\OwlCarouselSlider\Block\Adminhtml\Banner\Helper\Renderer\MobileImage',
-            ]
-        );
-
-        $this->addColumn(
             'valid_from',
             [
                 'header'   => __('Valid From'),
