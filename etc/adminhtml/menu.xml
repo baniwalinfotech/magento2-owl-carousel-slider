@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Baniwal_OwlCarouselSlider::Baniwal" title="OwlCarouselSlider" module="Baniwal_OwlCarouselSlider" sortOrder="200" resource="Baniwal_OwlCarouselSlider::Baniwal"/>
+        <add
+                id="Baniwal_OwlCarouselSlider::owlcarouselslider"
+                title="Carousels"
+                module="Baniwal_OwlCarouselSlider"
+                sortOrder="130"
+                parent="Baniwal_OwlCarouselSlider::Baniwal"
+                resource="Baniwal_OwlCarouselSlider::owlcarouselslider"
+        />
+        <add
+                id="Baniwal_OwlCarouselSlider::owlcarouselslider_general_configuration_carousel"
+                title="General Settings"
+                module="Baniwal_OwlCarouselSlider"
+                action="adminhtml/system_config/edit/section/baniwal_owl_slider_config/"
+                sortOrder="5"
+                parent="Baniwal_OwlCarouselSlider::owlcarouselslider"
+                resource="Baniwal_OwlCarouselSlider::owlcarouselslider_general_configuration_carousel"
+        />
+        <add
+                id="Baniwal_OwlCarouselSlider::owlcarouselslider_products_sliders"
+                title="OWL Product Carousels"
+                module="Baniwal_OwlCarouselSlider"
+                action="adminhtml/system_config/edit/section/baniwal_owl_carousel_config/"
+                sortOrder="10"
+                parent="Baniwal_OwlCarouselSlider::owlcarouselslider"
+                resource="Baniwal_OwlCarouselSlider::owlcarouselslider_products_sliders"
+        />
+        <add
+                id="Baniwal_OwlCarouselSlider::owlsliders"
+                title="Sliders"
+                module="Baniwal_OwlCarouselSlider"
+                sortOrder="140"
+                parent="Baniwal_OwlCarouselSlider::Baniwal"
+                resource="Baniwal_OwlCarouselSlider::owlcarouselslider"
+        />
+        <add
+                id="Baniwal_OwlCarouselSlider::owlcarouselslider_general_configuration_slider"
+                title="General Settings"
+                module="Baniwal_OwlCarouselSlider"
+                action="adminhtml/system_config/edit/section/baniwal_owl_slider_config/"
+                sortOrder="5"
+                parent="Baniwal_OwlCarouselSlider::owlsliders"
+                resource="Baniwal_OwlCarouselSlider::owlcarouselslider_general_configuration_slider"
+        />
+        <add
+                id="Baniwal_OwlCarouselSlider::owlcarouselslider_custom_banners"
+                title="Banners for Sliders"
+                module="Baniwal_OwlCarouselSlider"
+                action="baniwalowlcarousel/banner"
+                sortOrder="10"
+                parent="Baniwal_OwlCarouselSlider::owlsliders"
+                resource="Baniwal_OwlCarouselSlider::owlcarouselslider_custom_banners"
+        />
+        <add
+                id="Baniwal_OwlCarouselSlider::owlcarouselslider_custom_sliders"
+                title="Sliders Manager"
+                module="Baniwal_OwlCarouselSlider"
+                action="baniwalowlcarousel/slider"
+                sortOrder="20"
+                parent="Baniwal_OwlCarouselSlider::owlsliders"
+                resource="Baniwal_OwlCarouselSlider::owlcarouselslider_custom_sliders"
+        />
+    </menu>
+</config>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="baniwal_custom_slider" class="Baniwal\OwlCarouselSlider\Block\Slider\Custom" placeholder_image="Baniwal::images/custom_widget_slider.png">
+        <label translate="true">Baniwal - Custom Slider Widget</label>
+        <description>Baniwal - Custom Slider Widget</description>
+        <parameters>
+            <parameter name="slider_id" xsi:type="select" source_model="Baniwal\OwlCarouselSlider\Model\Config\Source\WidgetCustom" visible="true" sort_order="10" >
+                <label translate="true">Custom Slider</label>
+            </parameter>
+        </parameters>
+    </widget>
+
+    <widget id="baniwal_products_slider" class="Baniwal\OwlCarouselSlider\Block\Slider\Products" placeholder_image="Baniwal_OwlCarouselSlider::images/product_widget_slider.png">
+        <label translate="true">Baniwal - Products Carousel Widget</label>
+        <description>Baniwal - Products Slider Widget</description>
+        <parameters>
+            <parameter name="products_type" xsi:type="select" source_model="Baniwal\OwlCarouselSlider\Model\Config\Source\WidgetProducts" visible="true" sort_order="10" >
+                <label translate="true">Products Slider Type</label>
+            </parameter>
+        </parameters>
+    </widget>
+
+    <widget id="baniwal_category_slider" class="Baniwal\OwlCarouselSlider\Block\Slider\Category" placeholder_image="Baniwal_OwlCarouselSlider::images/product_widget_slider.png">
+        <label translate="true">Baniwal - Custom Category Product Carousel</label>
+        <description>Baniwal - Category Slider Widget</description>
+        <parameters>
+            <parameter name="upgrade_to_pro_required"  xsi:type="text" visible="false" required="true" sort_order="5">
+            </parameter>
+            <parameter name="upgrade_to_pro" xsi:type="block" visible="true" required="true" sort_order="5">
+                <block class="Baniwal\OwlCarouselSlider\Block\Adminhtml\Widget\UpgradeToPro" />
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
